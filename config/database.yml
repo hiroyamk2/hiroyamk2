@@ -10,18 +10,16 @@ default: &default
   pool: 5
   username: root
   password: password
-  host: 127.0.0.1
-  socket: /tmp/mysql.sock
-​
-development:
-  <<: *default
-  database: jaminpo_development
-​
-test:
-  <<: *default
-  database: jaminpo_test
-​
+  host: localhost
+
 production:
   <<: *default
-  database: jaminpo_production
- 
+  database: hiroyamk2_production
+
+development:
+  <<: *default
+  database: hiroyamk2_development
+
+test:
+  <<: *default
+  database: hiroyamk2_test
